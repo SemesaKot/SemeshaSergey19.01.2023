@@ -1,0 +1,68 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+//int main() {
+	//	int g = 15;
+	//	do {
+	//		g++;
+	//		cout << "Boston" << endl;
+	//		cout << g;
+	//	} while (g < 69);
+	//}
+
+
+//	int h = 0;
+//	do {
+//		h++;
+//		cout << h << " ";
+//		cout << h * h << endl;
+//	} while (h < 20);
+//}
+
+
+//	string pass;
+//	int tries = 0;
+//	do {
+//		tries++;
+//		cin >> pass;
+//	} while (pass != "6969" && tries != 3);
+//
+//}
+
+
+	/*bool isNumber(string s)
+	{
+		for (int i = 0; i < s.length(); i++)
+			if (isdigit(s[i]) == false)
+				return false;
+		return true;
+	}
+	int main(){
+	string name;
+	do {
+		cout << "enter my name pls" << endl;
+		cin >> name;
+		if (isNumber(name)) { cout << "no numero only letters"<<endl; };
+	} while (name!= "Semush");
+	return 0;
+}*/
+
+
+bool isNumber(string s)
+	{
+		for (int i = 0; i < s.length(); i++)
+			if (isdigit(s[i]) == true)
+				return true;
+		return true;
+	}
+	int main(){
+	string pass;
+	int tries = 0;
+	do {
+		tries++;
+		cout << "enter password for code" << endl;
+		cin >> pass;
+		if (isNumber(pass)) { cout << "no words only numbers"<<endl; };
+	} while (pass!= "6969"&&tries!=3);
+	return 0;
+}
